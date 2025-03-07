@@ -8,7 +8,7 @@ it would be as fast as a more efficient solution, such as Rolling Hash. However,
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Rolling Hash is a 64-bit integer because during the calculations, and before taking modulo Math.pow(10, 9) + 7), 
+In this solution, Rolling Hash is a 64-bit integer because during the calculations, and before taking modulo Math.pow(10, 9) + 7), 
 it might temporarily exceed the boundary of a 32-bit integer. However, after taking modulo Math.pow(10, 9) + 7), the value of Rolling Hash
 (obviously!!) is within the limits of a 32-bit integer. That said, the HashSets are for 64-bit integers in order to avoid constant
 casting from 64-bit integer to 32-bit integer. 
